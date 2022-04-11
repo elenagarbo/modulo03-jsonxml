@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE supermercados[
+	<!ELEMENT supermercados (supermercado+)>
+	<!ELEMENT supermercado (nombre_super, direccion, geolocalizacion, productos)>
+	<!ELEMENT nombre_super (#PCDATA)>
+	<!ELEMENT direccion (#PCDATA)>
+	<!ELEMENT geolocalizacion (latitud,longitud)>
+	<!ELEMENT latitud (#PCDATA)>
+	<!ELEMENT longitud (#PCDATA)>
+	<!ELEMENT productos (producto+)>
+	<!ELEMENT producto (nombre,seccion, descripcion, oferta, vigencia_oferta?,precio_venta, precio_oferta?,formato)>
+	<!ELEMENT nombre (#PCDATA)>
+	<!ELEMENT seccion (#PCDATA)>
+	<!ELEMENT descripcion (#PCDATA)>
+	<!ELEMENT oferta (#PCDATA)>
+	<!ELEMENT vigencia_oferta (fecha_inicio, fecha_fin)>
+	<!ELEMENT fecha_inicio (#PCDATA)>
+	<!ELEMENT fecha_fin (#PCDATA)>
+	
+	<!ELEMENT precio_venta (#PCDATA)>
+	<!ELEMENT precio_oferta (#PCDATA)>
+	<!ELEMENT formato (#PCDATA)>
+	
+	<!ATTLIST supermercado id_super ID #REQUIRED>
+	<!ATTLIST producto id ID #REQUIRED> 
+	<!ATTLIST producto adquirido (true|false) #REQUIRED> 
+	<!ATTLIST producto habitual (true|false) #REQUIRED>
+	<!ATTLIST producto origen CDATA #REQUIRED> 
+]>
+<supermercados>
+    <supermercado id_super="sup01">
+        <nombre_super>Lidl</nombre_super>
+        <direccion>C. de Cartagena, 91, 28028 Madrid</direccion>
+        <geolocalizacion>
+            <latitud>40°26'19.5"N</latitud>
+            <longitud>3°40'23.1"W</longitud>
+        </geolocalizacion>
+        <productos>
+            <producto id="hortaliza1" adquirido="true" habitual="false" origen="España">
+                <nombre>zanahorias</nombre>
+                <seccion>verduras y hortalizas</seccion>
+                <descripcion>tomate rama huerta Murcia</descripcion>
+                <oferta>true</oferta>
+                <vigencia_oferta>
+                    <fecha_inicio>02/04/2022</fecha_inicio>
+                    <fecha_fin>12/04/2022</fecha_fin>
+                </vigencia_oferta>
+                <precio_venta>0.65</precio_venta>
+                <precio_oferta>0.49</precio_oferta>
+                <formato>1 kg</formato>
+            </producto>
+            <producto id="embutido1" adquirido="true" habitual="true" origen="España">
+                <nombre>Pechuga de pollo</nombre>
+                <seccion>Embutidos</seccion>
+                <descripcion>Braseado finas lonchas</descripcion>
+                <oferta>false</oferta>
+                <precio_venta>1.89</precio_venta>
+                <formato>200 g</formato>
+            </producto>
+            <producto id="deluxe1" adquirido="true" habitual="true" origen="denominación de origen protegida">
+                <nombre>Carpaccio de salmón</nombre>
+                <seccion>Alimentación deluxe</seccion>
+                <descripcion>con vinagreta y parmigiano</descripcion>
+                <oferta>false</oferta>
+                <precio_venta>1.89</precio_venta>
+                <formato>125 g</formato>
+            </producto>
+        </productos>
+    </supermercado>
+    <supermercado id_super="sup02">
+        <nombre_super>Aldi</nombre_super>
+        <direccion>C/ de Francisco Silvela, 48, 28028 Madrid</direccion>
+        <geolocalizacion>
+            <latitud>40°26'03.1"N</latitud>
+            <longitud>3°40'25.5"W</longitud>
+        </geolocalizacion>
+        <productos>
+            <producto id="huevos1" adquirido="true" habitual="false" origen="España">
+                <nombre>huevos M</nombre>
+                <seccion>lacteos y huevos</seccion>
+                <descripcion>De gallinas criadas en el suelo</descripcion>
+                <oferta>false</oferta>
+                <precio_venta>2.59</precio_venta>
+                <formato>24 unidades</formato>
+            </producto>
+            <producto id="fruteria1" adquirido="true" habitual="true" origen="Perú">
+                <nombre>Mango</nombre>
+                <seccion>fruteria</seccion>
+                <descripcion>Variedad kent</descripcion>
+                <oferta>true</oferta>
+                <vigencia_oferta>
+                    <fecha_inicio>10/04/2022</fecha_inicio>
+                    <fecha_fin>20/04/2022</fecha_fin>
+                </vigencia_oferta>
+                <precio_venta>1.29</precio_venta>
+                <precio_oferta>0.95</precio_oferta>
+                <formato>450 g</formato>
+            </producto>
+            <producto id="pescaderia1" adquirido="false" habitual="false" origen="Noruega">
+                <nombre>Solomillo de salmón</nombre>
+                <seccion>pescaderia</seccion>
+                <descripcion>limpio y listo para cocinar</descripcion>
+                <oferta>true</oferta>
+                <vigencia_oferta>
+                    <fecha_inicio>15/04/2022</fecha_inicio>
+                    <fecha_fin>25/04/2022</fecha_fin>
+                </vigencia_oferta>
+                <precio_venta>7.99</precio_venta>
+                <precio_oferta>6.39</precio_oferta>
+                <formato>400 g</formato>
+            </producto>
+        </productos>
+    </supermercado>
+</supermercados>

@@ -1,0 +1,100 @@
+{
+  "supermercado1": [
+    {
+      "id_super": 0,
+      "nombre": "Lidl",
+      "direccion": "C. de Cartagena, 91, 28028 Madrid",
+      "geolocalizacion": ["40°26'19.5\"N", "3°40'23.1\"W"],
+      "productos": [
+        {
+          "id": "hortaliza1",
+          "nombre": "zanahorias",
+          "seccion": "verduras y hortalizas",
+          "descripcion": "tomate rama huerta Murcia",
+          "origen": "España",
+          "oferta": true,
+          "vigenciaOferta": ["02/04/2022", "12/04/2022"],
+          "precioVenta": 0.65,
+          "precioOferta": 0.49,
+          "formato": "1 kg",
+          "adquirido": true,
+          "habitual": false
+        },
+        {
+          "id": "embutido1",
+          "nombre": "Pechuga de pollo",
+          "seccion": "Embutidos",
+          "descripcion": "Braseado finas lonchas",
+          "origen": "España",
+          "oferta": false,
+          "precioVenta": 1.89,
+          "formato": "200 g",
+          "adquirido": true,
+          "habitual": true
+        },
+        {
+          "id": "deluxe1",
+          "nombre": "Carpaccio de salmón",
+          "seccion": "Alimentación deluxe",
+          "descripcion": "con vinagreta y parmigiano",
+          "origen": "denominación de origen protegida",
+          "oferta": false,
+          "precioVenta": 1.89,
+          "formato": "125 g",
+          "adquirido": true,
+          "habitual": true
+        }
+      ]
+    }
+  ],
+  "supermercado2": [
+    {
+      "id_super": 11,
+      "nombre": "Aldi",
+      "direccion": "C/ de Francisco Silvela, 48, 28028 Madrid",
+      "geolocalizacion": ["40°26'03.1\"N", "3°40'25.5\"W"],
+      "productos": [
+        {
+          "id": "huevos1",
+          "nombre": "huevos M",
+          "seccion": "lacteos y huevos",
+          "descripcion": "De gallinas criadas en el suelo",
+          "origen": "España",
+          "oferta": false,
+          "precioVenta": 2.59,
+          "formato": "24 unidades",
+          "adquirido": true,
+          "habitual": false
+        },
+        {
+          "id": "fruteria1",
+          "nombre": "Mango",
+          "seccion": "fruteria",
+          "descripcion": "Variedad kent",
+          "origen": "Perú",
+          "oferta": true,
+          "vigenciaOferta": ["10/04/2022", "20/04/2022"],
+          "precioVenta": 1.29,
+          "precioOferta": 0.95,
+          "formato": "450 g",
+          "adquirido": true,
+          "habitual": true
+        },
+        {
+          "id": "pescaderia1",
+          "nombre": "Solomillo de salmón",
+          "seccion": "pescaderia",
+          "descripcion": "limpio y listo para cocinar",
+          "origen": "Noruega",
+          "oferta": true,
+          "vigenciaOferta": ["15/04/2022", "25/04/2022"],
+          "precioVenta": 7.99,
+          "precioOferta": 6.39,
+          "formato": "400 g",
+          "adquirido": false,
+          "habitual": false
+        }
+      ]
+    }
+  ]
+}
